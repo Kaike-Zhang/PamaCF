@@ -41,7 +41,7 @@ parser.add_argument('--n_epochs', type=int, default=30, help='max epoch')
 parser.add_argument('--top_k', type=list, default=[10, 20], help='K in evaluation')
 parser.add_argument('--attack_top_k', type=list, default=[10, 20, 50], help='K in evaluation of attakcs')
 
-# LAT
+# AT
 parser.add_argument('--adv_reg', type=float, default=1.0, help='learning rate')
 parser.add_argument('--eps', type=float, default=0.3, help='learning rate')
 parser.add_argument('--user_lmb', type=float, default=2, help='learning rate')

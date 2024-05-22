@@ -50,15 +50,12 @@ class BasicDataset(Dataset):
             else:
                 data = new_data
 
-        # 为用户和物品分配新的编号
         user_ids = {user: idx for idx, user in enumerate(set(row[0] for row in data))}
         item_ids = {item: idx for idx, item in enumerate(set(row[1] for row in data))} 
 
-        # 按时间排序
         if len(data[0]) > 2:
             data.sort(key=lambda row: datetime.strptime(row[2], '%Y%m%d%H%M'))
 
-        # 生成以用户编号为key的字典
         user_item_dict = defaultdict(list)
         for row in data:
             user_id, item_id = user_ids[row[0]], item_ids[row[1]]
