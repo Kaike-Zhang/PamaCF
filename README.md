@@ -34,3 +34,14 @@ Adversarial Collaborative Filtering (ACF), which typically applies adversarial p
     ```
 
    Replace `<backbone model>` with the name of your model, and `<dataset>` with the name of your dataset.
+
+
+## Citation
+If you find our work useful, please cite our paper using the following BibTeX:
+
+```bibtex
+@inproceedings{zhangunderstanding,
+  title={Understanding and Improving Adversarial Collaborative Filtering for Robust Recommendation},
+  author={Zhang, Kaike and Cao, Qi and Wu, Yunfan and Sun, Fei and Shen, Huawei and Cheng, Xueqi},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
+}
